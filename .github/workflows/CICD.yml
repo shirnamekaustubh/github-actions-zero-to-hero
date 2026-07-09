@@ -4,22 +4,22 @@ on:
   workflow_dispatch: null
 jobs:
   restore: restore code
-    runs-on: ununtu-latest
+  runs-on: ununtu-latest
     steps:
       - name: checkout code
         run: echo "clone code"
   build:
-    runs-on: ununtu-latest
+  runs-on: ununtu-latest
     steps:
       - name: build code
         run: echo "build code"
   test:
-    runs-on: ununtu-latest
+  runs-on: ununtu-latest
     steps:
       - name: test code
         run: echo "test code"
   deploy:
-    runs-on: ununtu-latest
+  runs-on: ununtu-latest
     steps:
       - name: deploy code
         run: echo "deploy code"
