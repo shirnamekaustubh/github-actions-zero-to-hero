@@ -5,4 +5,22 @@ jobs:
   Greet:
     runs-on: ubuntu latest
 
-  
+  restore: restore code
+    steps:
+    - name: checkout code
+        run: echo "clone code"
+        
+  build:
+    steps:
+      - name: build code
+        run: echo "build code"
+        
+  test:
+    steps:
+      - name: test code
+        run: echo "test code"
+        
+  deploy:
+    steps:
+      - name: deploy code
+        run: echo "deploy code"
