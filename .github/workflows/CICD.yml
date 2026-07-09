@@ -4,10 +4,10 @@ on:
   workflow_dispatch: null
 jobs:
   restore: restore code
-   runs-on: ununtu-latest
-   steps:
-     - name: checkout code
-       run: echo "clone code"
+    runs-on: ununtu-latest
+    steps:
+      - name: checkout code
+        run: echo "clone code"
   build:
     runs-on: ununtu-latest
     steps:
