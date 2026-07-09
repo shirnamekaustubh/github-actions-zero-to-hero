@@ -2,27 +2,25 @@ name: CICD
 on:
   workflow_dispatch: null
 jobs:
+  Greet:
+    runs-on: ubuntu latest
 
   restore: restore code
-    runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+    - name: checkout code
         run: echo "clone code"
         
   build:
-    runs-on: ubuntu-latest
     steps:
       - name: build code
         run: echo "build code"
         
   test:
-    runs-on: ubuntu-latest
     steps:
       - name: test code
         run: echo "test code"
         
   deploy:
-    runs-on: ubuntu-latest
     steps:
       - name: deploy code
         run: echo "deploy code"
